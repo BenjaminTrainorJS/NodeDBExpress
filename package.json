@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
-    "dev": "run-p server",
-    "server": "nodemon server",
+    "dev": "nodemon server",
     "lint": "eslint . --ext .js,.jsx",
     "knex": "knex --knexfile server/db/knexfile.js",
     "test": "jest --watchAll --verbose"
