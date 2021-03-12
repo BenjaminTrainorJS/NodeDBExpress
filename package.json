@@ -1,0 +1,35 @@
+{
+  "name": "node-db-express",
+  "version": "1.0.0",
+  "description": "A personal project to show my working knowledge of Node.js, Databases, and Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "run-p server",
+    "server": "nodemon server",
+    "lint": "eslint . --ext .js,.jsx",
+    "knex": "knex --knexfile server/db/knexfile.js",
+    "test": "jest --watchAll --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenjaminTrainorJS/NodeDBExpress.git"
+  },
+  "author": "Benjamin Trainor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenjaminTrainorJS/NodeDBExpress/issues"
+  },
+  "homepage": "https://github.com/BenjaminTrainorJS/NodeDBExpress#readme",
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-eda": "^0.1.4",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.21.19",
+    "nodemon": "^2.0.7",
+    "sqlite3": "^5.0.2"
+  }
+}
